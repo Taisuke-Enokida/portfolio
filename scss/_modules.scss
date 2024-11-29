@@ -1,0 +1,39 @@
+@use 'variables' as *;
+@use 'mixin' as *;
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4px;
+    height: 48px;
+    width: 212px;
+    border-radius: 5px;
+    font-family: $lora;
+    @include mq(sp){
+        height: 43px;
+        width: 152px;
+    }
+
+    .fa-envelope{
+        margin-top: 2px;
+        font-size: 16px;
+    }
+
+    &--fill{
+        background: linear-gradient(70deg, #ffd700, #a65e00, #f9e212, #ffffd2);
+        color: $baseColor;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        &:hover {
+            background: linear-gradient(50deg, #ffd700, #a65e00, #f9e212, #ffffd2);
+            color: #656565;
+            margin-top: 2px;
+          }
+    }
+
+    &--stroke{
+        border: 1px solid $textColor;
+        background-color: $baseColor;
+        color: $textColor;
+    }
+}
