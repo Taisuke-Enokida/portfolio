@@ -250,6 +250,7 @@ h2 {
 }
 #design .head2 {
   mix-blend-mode: soft-light;
+  -webkit-mix-blend-mode: multiply;
 }
 #design .design-content {
   position: absolute;

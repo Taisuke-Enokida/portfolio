@@ -189,6 +189,7 @@ h2{
     }
     .head2{
         mix-blend-mode: soft-light;
+        -webkit-mix-blend-mode: multiply;
     }
     .design-content{
         position: absolute;
