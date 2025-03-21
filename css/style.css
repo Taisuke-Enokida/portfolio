@@ -286,112 +286,112 @@ h2 {
   }
 }
 
-#product {
-  margin-bottom: 50px;
-}
 @media screen and (max-width:599px) {
   #product {
-    height: 110vh;
+    height: 120vh;
     margin: 0;
   }
-}
-#product .contents-container {
-  display: flex;
-  justify-content: space-evenly;
-  overflow: hidden;
 }
 @media screen and (max-width:599px) {
   #product .contents-container {
     display: block;
   }
 }
-#product .contents-container .product-content {
+#product .contents-container .product-contents {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width:599px) {
+  #product .contents-container .product-contents {
+    display: block;
+  }
+}
+#product .contents-container .product-contents .product-content {
   width: 30vw;
 }
 @media screen and (max-width:599px) {
-  #product .contents-container .product-content {
+  #product .contents-container .product-contents .product-content {
     width: 70vw;
     margin: 20px auto;
   }
 }
-#product .contents-container .product-content-photo {
+#product .contents-container .product-contents .product-content-photo {
   width: 29vw;
   overflow: hidden;
 }
 @media screen and (max-width:599px) {
-  #product .contents-container .product-content-photo {
+  #product .contents-container .product-contents .product-content-photo {
     width: 100%;
   }
 }
-#product .contents-container .product-content__img {
+#product .contents-container .product-contents .product-content__img {
   width: 100%;
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.5s linear;
 }
-#product .contents-container .product-content__img:hover {
+#product .contents-container .product-contents .product-content__img:hover {
   transform: scale(1.1);
 }
-#product .contents-container .product-content__title {
+#product .contents-container .product-contents .product-content__title {
   color: #e8e8e8;
   font-family: "Noto serif JP";
   font-size: 16px;
   text-align: center;
   margin-top: 8px;
 }
-#product .skills-content {
+#product .contents-container .skills-content {
   display: flex;
   justify-content: center;
   gap: 56px;
-  padding: 56px;
   color: #e8e8e8;
   font-family: "Lora";
 }
 @media screen and (max-width:599px) {
-  #product .skills-content {
+  #product .contents-container .skills-content {
     display: block;
   }
 }
-#product .skills-content .content-technical {
+#product .contents-container .skills-content .content-technical {
   text-align: center;
 }
-#product .skills-content .content-technical__title {
+#product .contents-container .skills-content .content-technical__title {
   font-size: 32px;
   padding: 24px;
 }
 @media screen and (max-width:599px) {
-  #product .skills-content .content-technical__title {
+  #product .contents-container .skills-content .content-technical__title {
     font-size: 24px;
   }
 }
-#product .skills-content .content-technical__text {
+#product .contents-container .skills-content .content-technical__text {
   font-size: 24px;
   line-height: 1.5;
 }
 @media screen and (max-width:599px) {
-  #product .skills-content .content-technical__text {
+  #product .contents-container .skills-content .content-technical__text {
     font-size: 16px;
   }
 }
-#product .skills-content .content-design {
+#product .contents-container .skills-content .content-design {
   text-align: center;
 }
-#product .skills-content .content-design__title {
+#product .contents-container .skills-content .content-design__title {
   font-size: 32px;
   padding: 24px;
 }
 @media screen and (max-width:599px) {
-  #product .skills-content .content-design__title {
+  #product .contents-container .skills-content .content-design__title {
     font-size: 24px;
   }
 }
-#product .skills-content .content-design__text {
+#product .contents-container .skills-content .content-design__text {
   font-size: 24px;
   line-height: 1.5;
 }
 @media screen and (max-width:599px) {
-  #product .skills-content .content-design__text {
+  #product .contents-container .skills-content .content-design__text {
     font-size: 16px;
   }
 }

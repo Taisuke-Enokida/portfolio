@@ -220,90 +220,93 @@ h2{
     }
 }
 #product{
-    margin-bottom: 50px;
     @include mq(sp){
-        height: 110vh;
+        height: 120vh;
         margin: 0;
     }
     .contents-container{
-        display: flex;
-        justify-content: space-evenly;
-        overflow: hidden;
         @include mq(sp){
             display: block;
         }
-        .product-content{
-            width: 30vw;
+        .product-contents{
+            display: flex;
+            justify-content: space-evenly;
             @include mq(sp){
-                width: 70vw;
-                margin: 20px auto;
+                display: block;
             }
-            &-photo{
-                width: 29vw;
-                overflow: hidden;
+            .product-content{
+                width: 30vw;
                 @include mq(sp){
+                    width: 70vw;
+                    margin: 20px auto;
+                }
+                &-photo{
+                    width: 29vw;
+                    overflow: hidden;
+                    @include mq(sp){
+                        width: 100%;
+                    }
+                }
+                &__img{
                     width: 100%;
+                    position: relative;
+                    object-fit: cover;
+                    transition: transform .5s linear;
+                    &:hover{
+                        transform: scale(1.1);
+                    } 
+                }
+                &__title{
+                    color: $textColor;
+                    font-family: $serif;
+                    font-size: 16px;
+                    text-align: center;
+                    margin-top: 8px;
                 }
             }
-            &__img{
-                width: 100%;
-                position: relative;
-                object-fit: cover;
-                transition: transform .5s linear;
-                &:hover{
-                    transform: scale(1.1);
-                } 
+        }
+        .skills-content{
+            display: flex;
+            justify-content: center;
+            gap: 56px;
+            // padding: 56px;
+            color: $textColor;
+            font-family: $lora;
+            @include mq(sp){
+                display: block;
             }
-            &__title{
-                color: $textColor;
-                font-family: $serif;
-                font-size: 16px;
+            .content-technical{
                 text-align: center;
-                margin-top: 8px;
-            }
-        }
-    }
-    .skills-content{
-        display: flex;
-        justify-content: center;
-        gap: 56px;
-        padding: 56px;
-        color: $textColor;
-        font-family: $lora;
-        @include mq(sp){
-            display: block;
-        }
-        .content-technical{
-            text-align: center;
-            &__title{
-                font-size: 32px;
-                padding: 24px;
-                @include mq(sp){
+                &__title{
+                    font-size: 32px;
+                    padding: 24px;
+                    @include mq(sp){
+                        font-size: 24px;
+                    }
+                }
+                &__text{
                     font-size: 24px;
+                    line-height: 1.5;
+                    @include mq(sp){
+                        font-size: 16px;
+                    }
                 }
             }
-            &__text{
-                font-size: 24px;
-                line-height: 1.5;
-                @include mq(sp){
-                    font-size: 16px;
+            .content-design{
+                text-align: center;
+                &__title{
+                    font-size: 32px;
+                    padding: 24px;
+                    @include mq(sp){
+                        font-size: 24px;
+                    }
                 }
-            }
-        }
-        .content-design{
-            text-align: center;
-            &__title{
-                font-size: 32px;
-                padding: 24px;
-                @include mq(sp){
+                &__text{
                     font-size: 24px;
-                }
-            }
-            &__text{
-                font-size: 24px;
-                line-height: 1.5;
-                @include mq(sp){
-                    font-size: 16px;
+                    line-height: 1.5;
+                    @include mq(sp){
+                        font-size: 16px;
+                    }
                 }
             }
         }
