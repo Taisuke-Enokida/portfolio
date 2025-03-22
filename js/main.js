@@ -155,7 +155,7 @@ const mm = gsap.matchMedia();mm.add("(max-width: 599px)", () => {
         duration: 0.6,
         scrollTrigger: {
             trigger: ".head4",
-            start: "top 40%"}
+            start: "top 60%"}
       })
     
     gsap.to(".head4", {
@@ -163,14 +163,14 @@ const mm = gsap.matchMedia();mm.add("(max-width: 599px)", () => {
     duration: 0.6,
     scrollTrigger: {
         trigger: ".head4",
-        start: "top 40%"}
+        start: "top 60%"}
     })
     gsap.to(".contact-content__ja, .contact-content__en", {
         color: "#232323", opacity:1,
         duration: 0.6,
         scrollTrigger: {
             trigger: ".head4",
-            start: "top 40%"}
+            start: "top 60%"}
     })
 })
 // const box = document.querySelector("#contact");

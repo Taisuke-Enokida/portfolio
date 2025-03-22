@@ -189,7 +189,7 @@ h2{
     }
     .head2{
         mix-blend-mode: soft-light;
-        -webkit-mix-blend-mode: multiply;
+        background: transparent; 
     }
     .design-content{
         position: absolute;
@@ -213,6 +213,7 @@ h2{
             font-size: 72px;
             font-family: $serif;
             mix-blend-mode: difference;
+            background: transparent; 
             @include mq(sp){
                 font-size: 48px;
             }

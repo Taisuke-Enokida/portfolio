@@ -250,7 +250,7 @@ h2 {
 }
 #design .head2 {
   mix-blend-mode: soft-light;
-  -webkit-mix-blend-mode: multiply;
+  background: transparent;
 }
 #design .design-content {
   position: absolute;
@@ -279,6 +279,7 @@ h2 {
   font-size: 72px;
   font-family: "Noto serif JP";
   mix-blend-mode: difference;
+  background: transparent;
 }
 @media screen and (max-width:599px) {
   #design .design-text__loop {
