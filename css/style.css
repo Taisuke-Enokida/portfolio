@@ -249,8 +249,7 @@ h2 {
   }
 }
 #design .head2 {
-  mix-blend-mode: soft-light;
-  transform-style: flat;
+  mix-blend-mode: overlay;
 }
 #design .design-content {
   position: absolute;
