@@ -267,6 +267,7 @@ h2 {
 #design .design-text {
   white-space: nowrap;
   position: absolute;
+  mix-blend-mode: difference;
   top: 400px;
 }
 @media screen and (max-width:599px) {
@@ -278,8 +279,6 @@ h2 {
   color: #e8e8e8;
   font-size: 72px;
   font-family: "Noto serif JP";
-  mix-blend-mode: difference;
-  transform-style: flat;
 }
 @media screen and (max-width:599px) {
   #design .design-text__loop {

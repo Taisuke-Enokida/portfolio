@@ -204,6 +204,7 @@ h2{
     .design-text{
         white-space: nowrap;
         position: absolute;
+        mix-blend-mode: difference;
         top: 400px;
         @include mq(sp){
             top: 240px;
@@ -212,8 +213,6 @@ h2{
             color: $textColor;
             font-size: 72px;
             font-family: $serif;
-            mix-blend-mode: difference;
-            transform-style: flat;
             @include mq(sp){
                 font-size: 48px;
             }
