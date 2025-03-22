@@ -189,7 +189,7 @@ h2{
     }
     .head2{
         mix-blend-mode: soft-light;
-        background: transparent; 
+        backface-visibility: visible;
     }
     .design-content{
         position: absolute;
@@ -213,7 +213,7 @@ h2{
             font-size: 72px;
             font-family: $serif;
             mix-blend-mode: difference;
-            background: transparent; 
+            backface-visibility: visible;
             @include mq(sp){
                 font-size: 48px;
             }
