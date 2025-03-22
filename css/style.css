@@ -328,7 +328,7 @@ h2 {
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: transform 0.5s linear;
+  transition: transform 0.3s linear;
 }
 #product .contents-container .product-contents .product-content__img:hover {
   transform: scale(1.1);
