@@ -203,7 +203,7 @@ h2{
     .design-text{
         white-space: nowrap;
         position: absolute;
-        mix-blend-mode: overlay;
+        mix-blend-mode: difference;
         top: 400px;
         @include mq(sp){
             top: 240px;

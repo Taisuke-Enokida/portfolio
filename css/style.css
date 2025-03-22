@@ -266,7 +266,7 @@ h2 {
 #design .design-text {
   white-space: nowrap;
   position: absolute;
-  mix-blend-mode: overlay;
+  mix-blend-mode: difference;
   top: 400px;
 }
 @media screen and (max-width:599px) {
