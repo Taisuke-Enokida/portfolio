@@ -189,7 +189,7 @@ h2{
     }
     .head2{
         mix-blend-mode: soft-light;
-        contain: paint;
+        transform-style: flat;
     }
     .design-content{
         position: absolute;
@@ -213,7 +213,7 @@ h2{
             font-size: 72px;
             font-family: $serif;
             mix-blend-mode: difference;
-            contain: paint;
+            transform-style: flat;
             @include mq(sp){
                 font-size: 48px;
             }
